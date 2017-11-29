@@ -60,15 +60,15 @@ Dodatkowo aby określić ilość drukowanych cyfr do kodu formatującego można 
     − %.3f liczba rzeczywista z dokladnoscią do 3 cyfr po przecinku  
 
 # Funkcja: scanf() 
-W celu użycia funkcji printf() należy użyć biblioteki: #include <stdio.h> 
+W celu użycia funkcji ***scanf()*** należy użyć biblioteki: #include <stdio.h> 
 odczytuje dane ze standardowego strumienia wejściowego (stdin) w/g zadanego formatu i zapamiętuje je pod zadanymi adresami pamięci
-int scanf ( tekst_sterujący , adres_1 , adres_2 ,  . . .  ) ; 
+***int scanf ( tekst_sterujący , adres_1 , adres_2 ,  . . .  ) ;*** 
 tekst  sterujący →  jest  to  stała  łańcuchowa  (w  podwójnych  cudzysłowach) 
 zawierająca polecenia jak traktować kolejne dane wczytywane ze strumienia 
-(jakie typy zmiennych są pod adresami adres_1, adres_2, ... ) 
-Kody formatujące (podobne jak dla printf() ): 
+(jakie typy zmiennych są pod adresami *adres_1, adres_2, ...* ) 
+Kody formatujące (podobne jak dla *printf()* ): 
 ````
-− %c − pojedynczy znak 
+− %c pojedynczy znak 
 − %s łańcuch znaków 
 − %d liczba dziesiętna ze znakiem   
 − %f lub %e liczba zmiennoprzecinkowa 
