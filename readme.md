@@ -6,9 +6,10 @@ W celu użycia funkcji ***printf()*** należy użyć biblioteki: #include <stdio
 Funkcja ***printf()*** wysyła sformatowane dane do standardowego strumienia wyjściowego (stdout)
 ***printf ( tekst_sterujcy , argument_1 , argument_2 ,  . . .  ) ;***
 tekst sterujący → jest to stała łańcuchowa (w cudzysłowach) zawierająca: 
->    − zwykłe znaki (które są po prostu kopiowane na ekran) 
+````  
+    − zwykłe znaki (które są po prostu kopiowane na ekran) 
     − kody formatujące kolejnych argumentów:
-    −  %c pojedynczy znak 
+    − %c pojedynczy znak 
     − %s łańcuch znaków
     − %d liczba dziesiętna ze znakiem 
     − %f liczba zmiennoprzecinkowa (notacja dziesiętna) 
@@ -18,6 +19,8 @@ tekst sterujący → jest to stała łańcuchowa (w cudzysłowach) zawierająca:
     − %x liczba w kodzie szesnastkowym (bez znaku) 
     − %o liczba w kodzie ósemkowym (bez znaku) 
     − l przedrostek (long) stosowany przed:  d  u  x  o
+````
+  
 ##### przykład 1: 
 
     #include <stdio.h>
@@ -50,10 +53,11 @@ Na ekranie pojawi się napis:
     Wynik obliczen 10 + 20 = 30.000000
 
 Dodatkowo aby określić ilość drukowanych cyfr do kodu formatującego można dodać kody długości: %Xd  %X.Xf np.    %4d 
-> − liczba dziesiętna na czterech pozycjach %10f 
-− liczba rzeczywista na 10 pozycjach %10.2f 
-− liczba rzeczywista na 10 pozycjach, 2 cyfry po przecinku %.3f 
-− liczba rzeczywista z dokladnoscią do 3 cyfr po przecinku  
+
+    − liczba dziesiętna na czterech pozycjach %10f 
+    − liczba rzeczywista na 10 pozycjach %10.2f 
+    − liczba rzeczywista na 10 pozycjach, 2 cyfry po przecinku %.3f 
+    − liczba rzeczywista z dokladnoscią do 3 cyfr po przecinku  
 
 # Funkcja: scanf() 
 W celu użycia funkcji printf() należy użyć biblioteki: #include <stdio.h> 
@@ -63,8 +67,8 @@ tekst  sterujący →  jest  to  stała  łańcuchowa  (w  podwójnych  cudzysł
 zawierająca polecenia jak traktować kolejne dane wczytywane ze strumienia 
 (jakie typy zmiennych są pod adresami adres_1, adres_2, ... ) 
 Kody formatujące (podobne jak dla printf() ): 
-
-> − %c − pojedynczy znak %s
+````
+− %c − pojedynczy znak %s
 − łańcuch znaków %d
 − liczba dziesiętna ze znakiem   %f  lub  %e
 − liczba zmiennoprzecinkowa %u −   liczba dziesiętna bez znaku %x
@@ -90,14 +94,14 @@ przykład:
   	} 
 
 Na ekranie pojawi się napis: 
-````
-Podaj jedną liczbę calkowita:
-````
+
+    Podaj jedną liczbę calkowita:
+
 podajemy np. 123 ↵
 Następnie na ekranie pojawi się napis:
-````
-Podaj jedną liczbę rzeczywista i jeden znak:
-````
+
+    Podaj jedną liczbę rzeczywista i jeden znak:
+
 podajemy np. ***456 a ↵*** 
 Po wprowadzeniu danych otrzymamy wynik na ekranie:  
 
