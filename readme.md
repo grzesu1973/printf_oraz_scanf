@@ -2,7 +2,7 @@
 # FUNKCJIE WEJŚCIA / WYJŚCIA w jezyku C
 ****
 ## Funkcja: printf()
-W celu użycia funkcji ***printf()*** należy użyć biblioteki: #include <stdio.h> 
+W celu użycia funkcji ***printf()*** należy użyć biblioteki: #include <stdio.h>
 Funkcja ***printf()*** wysyła sformatowane dane do standardowego strumienia wyjściowego (stdout)
 ***printf ( tekst_sterujcy , argument_1 , argument_2 ,  . . .  ) ;***
 tekst sterujący → jest to stała łańcuchowa (w cudzysłowach) zawierająca: 
