@@ -2,23 +2,22 @@
 # FUNKCJIE WEJŚCIA / WYJŚCIA w jezyku C
 ****
 ## Funkcja: printf()
-W celu użycia funkcji printf() należy użyć biblioteki: #include <stdio.h> 
-Funkcja printf() wysyła sformatowane dane do standardowego strumienia wyjściowego (stdout)
-printf ( tekst_sterujcy , argument_1 , argument_2 ,  . . .  ) ; 
+W celu użycia funkcji ***printf()*** należy użyć biblioteki: #include <stdio.h> 
+Funkcja ***printf()*** wysyła sformatowane dane do standardowego strumienia wyjściowego (stdout)
+***printf ( tekst_sterujcy , argument_1 , argument_2 ,  . . .  ) ;***
 tekst sterujący → jest to stała łańcuchowa (w cudzysłowach) zawierająca: 
-
-    − zwykłe znaki (które są po prostu kopiowane na ekran) 
-    − kody formatujące kolejnych argumentów: %c
-    − pojedynczy znak %s
-    − łańcuch znaków %d
-    − liczba dziesiętna ze znakiem %f
-    − liczba zmiennoprzecinkowa (notacja dziesiętna) %e
-    − liczba zmiennoprzecinkowa (notacja wykładnicza) %g
-    − liczba zmiennoprzecinkowa (krótszy z formatów %f %e) %u
-    − liczba dziesiętna bez znaku %x
-    − liczba w kodzie szesnastkowym (bez znaku) %o
-    − liczba w kodzie ósemkowym (bez znaku) l
-    − przedrostek (long) stosowany przed:  d  u  x  o
+>    − zwykłe znaki (które są po prostu kopiowane na ekran) 
+    − kody formatujące kolejnych argumentów:
+    −  %c pojedynczy znak 
+    − %s łańcuch znaków
+    − %d liczba dziesiętna ze znakiem 
+    − %f liczba zmiennoprzecinkowa (notacja dziesiętna) 
+    − %e liczba zmiennoprzecinkowa (notacja wykładnicza) 
+    − %e liczba zmiennoprzecinkowa (krótszy z formatów %f %e) 
+    − %u liczba dziesiętna bez znaku
+    − %x liczba w kodzie szesnastkowym (bez znaku) 
+    − %o liczba w kodzie ósemkowym (bez znaku) 
+    − l przedrostek (long) stosowany przed:  d  u  x  o
 ##### przykład 1: 
 
     #include <stdio.h>
@@ -29,9 +28,9 @@ tekst sterujący → jest to stała łańcuchowa (w cudzysłowach) zawierająca:
     }
     
 Na ekranie pojawi się napis:
-````
-Hello to ja :-)
-````
+
+    Hello to ja :-)
+
 
 ##### przykład 2:
 
@@ -51,7 +50,7 @@ Na ekranie pojawi się napis:
     Wynik obliczen 10 + 20 = 30.000000
 
 Dodatkowo aby określić ilość drukowanych cyfr do kodu formatującego można dodać kody długości: %Xd  %X.Xf np.    %4d 
-− liczba dziesiętna na czterech pozycjach %10f 
+> − liczba dziesiętna na czterech pozycjach %10f 
 − liczba rzeczywista na 10 pozycjach %10.2f 
 − liczba rzeczywista na 10 pozycjach, 2 cyfry po przecinku %.3f 
 − liczba rzeczywista z dokladnoscią do 3 cyfr po przecinku  
@@ -63,8 +62,9 @@ int scanf ( tekst_sterujący , adres_1 , adres_2 ,  . . .  ) ;
 tekst  sterujący →  jest  to  stała  łańcuchowa  (w  podwójnych  cudzysłowach) 
 zawierająca polecenia jak traktować kolejne dane wczytywane ze strumienia 
 (jakie typy zmiennych są pod adresami adres_1, adres_2, ... ) 
-Kody formatujące (podobne jak dla printf() ): %c−pojedynczy znak %s
-````
+Kody formatujące (podobne jak dla printf() ): 
+
+> − %c − pojedynczy znak %s
 − łańcuch znaków %d
 − liczba dziesiętna ze znakiem   %f  lub  %e
 − liczba zmiennoprzecinkowa %u −   liczba dziesiętna bez znaku %x
