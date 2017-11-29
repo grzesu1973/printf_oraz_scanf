@@ -1,5 +1,5 @@
 ****
-# FUNKCJIE WEJŚCIA / WYŚCIA w jezyku C
+# FUNKCJIE WEJŚCIA / WYJŚCIA w jezyku C
 ****
 ## Funkcja: printf()
 W celu użycia funkcji printf() należy użyć biblioteki: #include <stdio.h> 
