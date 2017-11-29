@@ -52,12 +52,12 @@ Na ekranie pojawi się napis:
 
     Wynik obliczen 10 + 20 = 30.000000
 
-Dodatkowo aby określić ilość drukowanych cyfr do kodu formatującego można dodać kody długości: %Xd  %X.Xf np.    %4d 
+Dodatkowo aby określić ilość drukowanych cyfr do kodu formatującego można dodać kody długości: %Xd  %X.Xf np.     
 
-    − liczba dziesiętna na czterech pozycjach %10f 
-    − liczba rzeczywista na 10 pozycjach %10.2f 
-    − liczba rzeczywista na 10 pozycjach, 2 cyfry po przecinku %.3f 
-    − liczba rzeczywista z dokladnoscią do 3 cyfr po przecinku  
+    − %4d liczba dziesiętna na czterech pozycjach 
+    − %10f liczba rzeczywista na 10 pozycjach  
+    − %10.2f liczba rzeczywista na 10 pozycjach, 2 cyfry po przecinku  
+    − %.3f liczba rzeczywista z dokladnoscią do 3 cyfr po przecinku  
 
 # Funkcja: scanf() 
 W celu użycia funkcji printf() należy użyć biblioteki: #include <stdio.h> 
@@ -68,15 +68,18 @@ zawierająca polecenia jak traktować kolejne dane wczytywane ze strumienia
 (jakie typy zmiennych są pod adresami adres_1, adres_2, ... ) 
 Kody formatujące (podobne jak dla printf() ): 
 ````
-− %c − pojedynczy znak %s
-− łańcuch znaków %d
-− liczba dziesiętna ze znakiem   %f  lub  %e
-− liczba zmiennoprzecinkowa %u −   liczba dziesiętna bez znaku %x
-− liczba w kodzie szesnastkowym (bez znaku) %o −   liczba w kodzie ósemkowym (bez znaku) l
-−  przedrostek stosowany przed:  du x o  (long int) l
-−  przedrostek stosowany przed:  f e  (double) L
-−  przedrostek stosowany przed:  f e  (long double) &  
-−  operator adresowania (zwraca adres zmiennej podanej po operatorze) 
+− %c − pojedynczy znak 
+− %s łańcuch znaków 
+− %d liczba dziesiętna ze znakiem   
+− %f lub %e liczba zmiennoprzecinkowa 
+− %u liczba dziesiętna bez znaku 
+− %x liczba w kodzie szesnastkowym (bez znaku)  
+− %o liczba w kodzie ósemkowym (bez znaku) 
+− l przedrostek stosowany przed:  d u x o  (long int) 
+− l przedrostek stosowany przed:  f e  (double) 
+− L przedrostek stosowany przed:  f e  (long double)  
+
+− & operator adresowania (zwraca adres zmiennej podanej po operatorze) 
 ````
 przykład: 
 
